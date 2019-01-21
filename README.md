@@ -330,6 +330,11 @@ Plugin 'octol/vim-cpp-enhanced-highlight'
 ```
 即可。
 
+YouCompleteMe安装后还需安装如下clang：
+cd ~/.vim/bundle/YouCompleteMe
+./install.py --clang-completer
+
+
 你得注意插件的下载源。同名插件在 github.com 上可能有多个，比如，indexer 插件，至少就有 https://github.com/vim-scripts/indexer.tar.gz 、https://github.com/everzet/vim-indexer 、https://github.com/shemerey/vim-indexer 等三个，到底应该选哪个呢？以我的经验来看，对于钟意的插件，我会先找其作者的个人网站，上面通常会罗列出托管在 github.com 的具体地址；若没有，我会找该插件在 vim.org 的页面，上面也会有 github.com 托管地址；若还是没有，再以 github 和插件名作为关键字搜索，点赞数多的，通常是你想找的。为节约你找插件地址的时间，本文中出现的每个插件我都会附上其地址。非特殊情况，后文介绍到的插件不再累述如何安装。
 
 通过 vundle 管理插件后，切勿通过发行套件自带的软件管理工具安装任何插件，不然 .vim/ 又要混乱了。
